@@ -1,0 +1,10 @@
+// los comentarios sirven para añadir informacionen el codigo, estos no se visualizan en la pantalla//
+
+// una variable sirve para declarar, puede estar conformado por letras, números y porlos simbolos ($) (_). además el primer caracter no puede ser un número//
+
+var()
+var texto= "el texto se encierra entre comillas"
+var numerica= "los decimales van con . y no con ,"
+var lógica= "true ,o, false"
+
+

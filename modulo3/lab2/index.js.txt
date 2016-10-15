@@ -1,0 +1,45 @@
+//arrays tambien llamados vectores, matrices o arreglos, se definen utilizando corchetes//
+
+   var conjunto=["ejemplo1","ejemplo2","ejemplo3"];
+
+//para acceder a un elemento del array se indica su posicion empezando con el número 0//
+
+   var posicion= conjunto[1]       //es igual a ejemplo2//
+
+
+
+
+
+
+//los operadores permiten manipular el valor de las variables, realizar operacionesmatemáticas y comparar diferentes variables//
+
+
+//la asignación(=), guarda un valor especifico de una variable//
+
+   var numero=1;
+
+
+//el incremento(+) y el decremento(-), se utiliza unicamente con variables numericas. (++) aumenta una unidad.//
+
+   var numero=1;
+   ++numero;
+   alert(numero);    //mostrara el nuemro 6//
+
+
+//los logicos(!), obtiene valor contrario a la variable//
+
+   var visible=true;
+   alert(!visible);    //muestra false//
+
+
+//and(&&), combina 2 valores booleanos.(true+true)=true, las demas combinacines seran false//
+
+   var ejemplo1=false
+   var ejemplo2=true
+   resultado=ejemplo1 && ejemplo2      //mostrara false//
+
+ 
+//or(||), combina 2 valores booleanos.si alguna de las variables es true el resultado sera true//
+
+
+//matematicos(+,-,*.%,/), operaciones matematicas)
