@@ -9,28 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ride = (function () {
-    function ride() {
+var product_1 = require('../model/product');
+var ProductDetailComponent = (function () {
+    function ProductDetailComponent() {
     }
-    return ride;
-}());
-exports.ride = ride;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "carrera";
-        this.products = ;
-    }
-    AppComponent.prototype.onSelect = function (product) {
-        this.selected = product;
-    };
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', product_1.Product)
+    ], ProductDetailComponent.prototype, "product", void 0);
+    ProductDetailComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/ride.html'
+            selector: 'product-detail',
+            templateUrl: 'app/templates/product-detail.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ProductDetailComponent);
+    return ProductDetailComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ProductDetailComponent = ProductDetailComponent;
+//# sourceMappingURL=product-detail.component.js.map
