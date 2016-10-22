@@ -1,7 +1,5 @@
-﻿studentimport { Component } from '@angular/core';
-import { Product } from '../model/product';
-
-const PRODUCTS: Product[] = [
+import {Product} from '../model/product';
+export const PRODUCTS: Product[] = [
     {
         id: 1,
         name: "Samsung galaxy 8",
@@ -27,18 +25,3 @@ const PRODUCTS: Product[] = [
         quantity: 20
     }
 ];
-
-@Component({
-  selector: 'my-app',
-  templateUrl: 'app/templates/product.html'
-})
-export class AppComponent {
-
-    title: string = "Mis productos";
-    selected: Product;
-    products: Product[] = PRODUCTS;
-
-    onSelect(product: Product) {
-        this.selected = product;
-    }
-}

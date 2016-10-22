@@ -1,7 +1,5 @@
-﻿studentimport { Component } from '@angular/core';
-import { Product } from '../model/product';
-
-const PRODUCTS: Product[] = [
+"use strict";
+exports.PRODUCTS = [
     {
         id: 1,
         name: "Samsung galaxy 8",
@@ -27,18 +25,4 @@ const PRODUCTS: Product[] = [
         quantity: 20
     }
 ];
-
-@Component({
-  selector: 'my-app',
-  templateUrl: 'app/templates/product.html'
-})
-export class AppComponent {
-
-    title: string = "Mis productos";
-    selected: Product;
-    products: Product[] = PRODUCTS;
-
-    onSelect(product: Product) {
-        this.selected = product;
-    }
-}
+//# sourceMappingURL=product-mock.js.map
