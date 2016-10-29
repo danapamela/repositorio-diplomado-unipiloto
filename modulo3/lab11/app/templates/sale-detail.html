@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<div *ngIf="sale">
+    <hr />
+    <label>Id: </label><br />
+    <input [(ngModel)]="sale.id" placeholder="id"><br />
+    <label>Invoiceamount: </label><br />
+    <input [(ngModel)]="sale.invoiceamount" placeholder="invoice amount"><br />
+    <label>Tax: </label><br />
+    <input [(ngModel)]="sale.tax" placeholder="tax"><br />
+</div>

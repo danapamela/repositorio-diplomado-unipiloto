@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+<nav>
+    <a routerLink="/customer" routerLinkActive="active">customer id</a>
+</nav>
+<router-outlet></router-outlet>
+
+
+<ul>
+    <li *ngFor="let sale of sales"
+        [class.pepito]="sale === selected"
+        (click)="onSelect(sale)">
+        <span>{{sale.id}}</span> 
+    </li>
+</ul>
+
+<div *ngIf="selected">
+    <h2>
+        {{selected.id | uppercase}} 
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
