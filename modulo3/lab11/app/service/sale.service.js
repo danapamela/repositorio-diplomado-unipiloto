@@ -16,9 +16,15 @@ var SaleService = (function () {
     SaleService.prototype.getSales = function () {
         return Promise.resolve(sale_mock_1.SALES);
     };
-    SaleService.prototype.getSale = function (id) {
+    SaleService.prototype.getSaleCustomerDetail = function (id) {
         return this.getSales()
-            .then(function (sales) { return sales.find(function (sale) { return sale.id === id; }); });
+            .then(function (sales) {
+            return sales.filter(function (obj) {
+                if (obj.customer.id === id) {
+                    return true;
+                }
+            });
+        });
     };
     SaleService = __decorate([
         core_1.Injectable(), 

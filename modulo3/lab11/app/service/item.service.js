@@ -18,7 +18,7 @@ var ItemService = (function () {
     };
     ItemService.prototype.getItem = function (id) {
         return this.getItems()
-            .then(function (items) { return items.find(function (item) { return item.linenumber === id; }); });
+            .then(function (items) { return items.find(function (item) { return item.id === id; }); });
     };
     ItemService = __decorate([
         core_1.Injectable(), 

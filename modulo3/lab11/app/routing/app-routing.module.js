@@ -12,10 +12,22 @@ var router_1 = require("@angular/router");
 var core_1 = require("@angular/core");
 var item_detail_component_1 = require("../component/item-detail.component");
 var item_list_component_1 = require("../component/item-list.component");
+var customer_detail_component_1 = require("../component/customer-detail.component");
+var customer_list_component_1 = require("../component/customer-list.component");
+var sale_detail_component_1 = require("../component/sale-detail.component");
+var sale_list_component_1 = require("../component/sale-list.component");
+var product_list_component_1 = require("../component/product-list.component");
+var product_detail_component_1 = require("../component/product-detail.component");
 var routes = [
     { path: '', redirectTo: '/item', pathMatch: 'full' },
     { path: 'item/detail/:id', component: item_detail_component_1.ItemDetailComponent },
-    { path: 'item-list', component: item_list_component_1.ItemListComponent }
+    { path: 'item-list', component: item_list_component_1.ItemListComponent },
+    { path: 'customer-detail', component: customer_detail_component_1.CustomerDetailComponent },
+    { path: 'customer-list', component: customer_list_component_1.CustomerListComponent },
+    { path: 'sale-detail/:id', component: sale_detail_component_1.SaleDetailComponent },
+    { path: 'sale-list', component: sale_list_component_1.SaleListComponent },
+    { path: 'product-list', component: product_list_component_1.ProductListComponent },
+    { path: 'product/detail/:id', component: product_detail_component_1.ProductDetailComponent },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

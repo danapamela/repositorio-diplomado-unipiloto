@@ -20,7 +20,7 @@ export class SaleDetailComponent implements OnInit {
     ngOnInit(): void {
         this.route.params.forEach((params: Params) => {
             let id =+params['id'];
-            this.saleService.getSale(id)
+            this.saleService.getSaleCustomerDetail(id)
                 .then(sale => this.sale = sale);
         });
     }

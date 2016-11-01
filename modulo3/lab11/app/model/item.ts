@@ -1,4 +1,4 @@
 export class Item {
-    linenumber: number;
-    purchaseprice: number
+    id: number;
+    name: number
 }

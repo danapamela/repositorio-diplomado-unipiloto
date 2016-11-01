@@ -19,8 +19,8 @@ export class ItemDetailComponent implements OnInit {
 
     ngOnInit(): void {
         this.route.params.forEach((params: Params) => {
-            let id =+params['id'];
-            this.ItemService.getItem(id)
+            let linenumber =+params['linenumber'];
+            this.ItemService.getItem(linenumber)
                 .then(item => this.item = item);
         });
     }

@@ -1,17 +1,16 @@
-
 import {Item} from "../model/item";
 export const ITEMS: Item[] = [
     {
-        linenumber: 1,
-        purchaseprice: 123
+        id: 1,
+        name: 88493
         
     },
     {
-        linenumber: 2,
-        purchaseprice: 22563
+        id: 2,
+        name: 22563
     },
     {
-        linenumber: 3,
-        purchaseprice: 25896
+        id: 3,
+        name: 25896
     }
 ];

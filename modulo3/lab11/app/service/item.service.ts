@@ -10,6 +10,6 @@ export class ItemService{
 
     getItem(id: number): Promise<Item> {
         return this.getItems()
-            .then(items => items.find(item => item.linenumber === id));
+            .then(items => items.find(item => item.id === id));
     }
 }

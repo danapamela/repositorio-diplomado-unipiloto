@@ -19,8 +19,8 @@ var ItemDetailComponent = (function () {
     ItemDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.forEach(function (params) {
-            var id = +params['id'];
-            _this.ItemService.getItem(id)
+            var linenumber = +params['linenumber'];
+            _this.ItemService.getItem(linenumber)
                 .then(function (item) { return _this.item = item; });
         });
     };

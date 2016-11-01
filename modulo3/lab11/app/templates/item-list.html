@@ -1,14 +1,21 @@
 <h1>{{ title }}</h1>
-<nav>
-    <a routerLink="/sale" routerLinkActive="active">sales invoice id</a>
-    <a routerLink="/product" routerLinkActive="active">product id</a>
-</nav>
-<router-outlet></router-outlet>
-
 <ul>
     <li *ngFor="let item of items"
         [class.pepito]="item === selected"
         (click)="onSelect(item)">
-        <span>{{item.linenumber}}</span> {{item.purchaseprice}}
+        <span>{{item.id}}</span> {{item.name}}
     </li>
 </ul>
+
+<div *ngIf="selected">
+    <h2>
+        {{selected.name | uppercase}} is my Product
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<nav>
+    <a routerLink="/sale-list" routerLinkActive="active">sales invoice id</a>
+    <a routerLink="/product-list" routerLinkActive="active">product id</a>
+</nav>
+<router-outlet></router-outlet>

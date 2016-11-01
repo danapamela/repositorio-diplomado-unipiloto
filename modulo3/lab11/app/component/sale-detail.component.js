@@ -20,7 +20,7 @@ var SaleDetailComponent = (function () {
         var _this = this;
         this.route.params.forEach(function (params) {
             var id = +params['id'];
-            _this.saleService.getSale(id)
+            _this.saleService.getSaleCustomerDetail(id)
                 .then(function (sale) { return _this.sale = sale; });
         });
     };

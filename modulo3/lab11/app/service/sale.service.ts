@@ -8,8 +8,15 @@ export class SaleService{
         return Promise.resolve(SALES);
     }
 
-    getSale(id: number): Promise<Sale> {
+
+    getSaleCustomerDetail(id: number): Promise<Sale[]>{
         return this.getSales()
-            .then(sales => sales.find(sale => sale.id === id));
+            .then(sales => {
+                return sales.filter(obj => {
+                    if (obj.customer.id === id) {
+                        return true;
+                    }
+                });
+            });
     }
 }

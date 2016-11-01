@@ -35,4 +35,3 @@ export class ProductListComponent implements OnInit {
         this.router.navigate(['product/detail/', this.selected.id]);
     }
 }
-

@@ -1,4 +1,3 @@
-
 import {Sale} from "../model/sale";
 export const SALES: Sale[] = [
     {
