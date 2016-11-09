@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+<ul>
+    <li *ngFor="let client of clients"
+        [class.pepito]="client === selected"
+        (click)="onSelect(client)">
+        <span>{{client.id}}</span> {{client.name}}
+    </li>
+</ul>
+
+<div *ngIf="client">
+    <hr />
+    <label>Name: </label><br />
+    <input [(ngModel)]="client.name" placeholder="nombre"><br />
+    <label>Age: </label><br />
+    <input [(ngModel)]="client.age" placeholder="edad"><br />
+    <button (click)="save()">Save</button>
+</div>

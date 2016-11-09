@@ -12,16 +12,15 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./component/app.component');
-var customer_detail_component_1 = require('./component/customer-detail.component');
+var product_detail_component_1 = require('./component/product-detail.component');
 var app_routing_module_1 = require("./routing/app-routing.module");
-var customer_list_component_1 = require("./component/customer-list.component");
-var item_detail_component_1 = require("./component/item-detail.component");
-var item_list_component_1 = require("./component/item-list.component");
-var common_1 = require("@angular/common");
+var about_component_1 = require("./component/about.component");
 var product_list_component_1 = require("./component/product-list.component");
-var product_detail_component_1 = require("./component/product-detail.component");
-var sale_detail_component_1 = require("./component/sale-detail.component");
-var sale_list_component_1 = require("./component/sale-list.component");
+var home_component_1 = require("./component/home.component");
+var common_1 = require("@angular/common");
+var customer_component_1 = require("./component/customer.component");
+var sales_invoice_list_component_1 = require("./component/sales-invoice-list.component");
+var sales_invoice_detail_customer_component_1 = require("./component/sales-invoice-detail-customer.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -34,14 +33,13 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                customer_detail_component_1.CustomerDetailComponent,
-                customer_list_component_1.CustomerListComponent,
-                item_detail_component_1.ItemDetailComponent,
-                item_list_component_1.ItemListComponent,
-                product_list_component_1.ProductListComponent,
                 product_detail_component_1.ProductDetailComponent,
-                sale_detail_component_1.SaleDetailComponent,
-                sale_list_component_1.SaleListComponent,
+                product_list_component_1.ProductListComponent,
+                home_component_1.HomeComponent,
+                about_component_1.AboutComponent,
+                customer_component_1.CustomerComponent,
+                sales_invoice_list_component_1.SalesInvoiceComponent,
+                sales_invoice_detail_customer_component_1.SalesInvoiceCustomerDetailComponent
             ],
             providers: [
                 {

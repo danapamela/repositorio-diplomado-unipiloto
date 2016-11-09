@@ -1,4 +1,5 @@
 import {Customer} from "../model/customer";
+
 export const CUSTOMERS: Customer[] = [
     {
         id: 1,

@@ -3,17 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent }   from './component/app.component';
-import { CustomerDetailComponent } from './component/customer-detail.component';
+import { ProductDetailComponent } from './component/product-detail.component';
 import {AppRoutingModule} from "./routing/app-routing.module";
-import {CustomerListComponent} from "./component/customer-list.component";
-import {ItemDetailComponent} from "./component/item-detail.component";
-import {ItemListComponent} from "./component/item-list.component";
-import {APP_BASE_HREF} from "@angular/common";
+import {AboutComponent} from "./component/about.component";
 import {ProductListComponent} from "./component/product-list.component";
-import {ProductDetailComponent} from "./component/product-detail.component";
-import {SaleDetailComponent} from "./component/sale-detail.component";
-import {SaleListComponent} from "./component/sale-list.component";
-
+import {HomeComponent} from "./component/home.component";
+import {APP_BASE_HREF} from "@angular/common";
+import {CustomerComponent} from "./component/customer.component";
+import {SalesInvoiceComponent} from "./component/sales-invoice-list.component";
+import {SalesInvoiceCustomerDetailComponent} from "./component/sales-invoice-detail-customer.component";
 
 @NgModule({
   imports:      [
@@ -23,14 +21,13 @@ import {SaleListComponent} from "./component/sale-list.component";
   ],
   declarations: [
       AppComponent,
-      CustomerDetailComponent,
-      CustomerListComponent,
-      ItemDetailComponent,
-      ItemListComponent,
-      ProductListComponent,
       ProductDetailComponent,
-      SaleDetailComponent,
-      SaleListComponent,
+      ProductListComponent,
+      HomeComponent,
+      AboutComponent,
+      CustomerComponent,
+      SalesInvoiceComponent,
+      SalesInvoiceCustomerDetailComponent
   ],
   providers: [
       {

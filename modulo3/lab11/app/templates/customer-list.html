@@ -1,8 +1,0 @@
-<h1>{{ title }}</h1>
-<ul>
-    <li *ngFor="let customer of customers"
-        [class.pepito]="customer === selected"
-        (click)="onSelect(customer)">
-        <span>{{customer.id}}</span> {{customer.name}}
-    </li>
-</ul>

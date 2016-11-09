@@ -1,53 +1,10 @@
-import { Component } from '@angular/core';
-import { Product } from '../model/product';
-import {ProductService} from "../service/product.service";
-import { User } from '../model/user';
-import {Userservice} from "../service/user.service";
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/templates/product-list.html',
-    providers: [ProductService]
+    templateUrl: 'app/templates/app-component.html',
 })
+
 export class AppComponent {
-	title: string = "los productos del Año";
-
-    selected: Product;
-
-    products: Product[];
-
-    constructor(private productService: ProductService) {
-
-    }
-
-    getProducts() {
-        this.productService.getProducts()
-            .subscribe(
-            products => {
-                this.products = products;
-            },
-
-            error => {
-                console.log(error);
-            }
-        );
-    }
-
-    ngOnInit(): void {
-        this.getProducts();
-    }
-
-    onSelect(product: Product){
-        this.selected = product;
-    }
-
-    add(name: string): void {
-        name = name.trim();
-        if (!name) { return; }
-        this.productService.create(name)
-            .subscribe(product => {
-                this.products.push(product);
-                this.selected = null;
-            });
-    }
+    title: string = "Componente padre";
 }
