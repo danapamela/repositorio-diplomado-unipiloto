@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
     providers: [ProductService]
 })
 export class ProductListComponent {
-    @input()
+    @Input()
 
 	title: string = "Productos";
 

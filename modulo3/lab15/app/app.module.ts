@@ -14,7 +14,7 @@ import {InMemoryProductService} from "./mock/in-memory-product.service";
 import {InMemoryClientService} from "./mock/in-memory-client.service";
 import {ProductService} from "./service/product.service";
 import {ClientService} from "./service/client.service";
-
+import {APP_BASE_HREF} from "@angular/common";
 
 @NgModule({
   imports: [
@@ -31,7 +31,14 @@ import {ClientService} from "./service/client.service";
       ClientDetailComponent,
       ClientListComponent
   ],
-    providers: [ProductService, ClientService],
+  providers: [ProductService, ClientService, 
+      {
+          provide: APP_BASE_HREF, useValue : '/'
+
+  }
+
+  ],
+
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

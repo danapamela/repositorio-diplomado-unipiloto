@@ -23,6 +23,7 @@ var in_memory_product_service_1 = require("./mock/in-memory-product.service");
 var in_memory_client_service_1 = require("./mock/in-memory-client.service");
 var product_service_1 = require("./service/product.service");
 var client_service_1 = require("./service/client.service");
+var common_1 = require("@angular/common");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -42,7 +43,11 @@ var AppModule = (function () {
                 client_detail_component_1.ClientDetailComponent,
                 client_list_component_1.ClientListComponent
             ],
-            providers: [product_service_1.ProductService, client_service_1.ClientService],
+            providers: [product_service_1.ProductService, client_service_1.ClientService,
+                {
+                    provide: common_1.APP_BASE_HREF, useValue: '/'
+                }
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

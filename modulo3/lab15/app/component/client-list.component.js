@@ -45,7 +45,7 @@ var ClientListComponent = (function () {
         });
     };
     __decorate([
-        input(), 
+        core_1.Input(), 
         __metadata('design:type', String)
     ], ClientListComponent.prototype, "title", void 0);
     ClientListComponent = __decorate([

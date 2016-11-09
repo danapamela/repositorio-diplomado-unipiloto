@@ -45,7 +45,7 @@ var ProductListComponent = (function () {
         });
     };
     __decorate([
-        input(), 
+        core_1.Input(), 
         __metadata('design:type', String)
     ], ProductListComponent.prototype, "title", void 0);
     ProductListComponent = __decorate([
