@@ -9,9 +9,6 @@ import {ProductListComponent} from './component/product-list.component';
 import {ClientDetailComponent} from './component/client-detail.component';
 import {ClientListComponent} from './component/client-list.component';
 import {HttpModule} from "@angular/http";
-import {InMemoryWebApiModule} from "angular2-in-memory-web-api";
-import {InMemoryProductService} from "./mock/in-memory-product.service";
-import {InMemoryClientService} from "./mock/in-memory-client.service";
 import {ProductService} from "./service/product.service";
 import {ClientService} from "./service/client.service";
 import {APP_BASE_HREF} from "@angular/common";
@@ -22,7 +19,6 @@ import {APP_BASE_HREF} from "@angular/common";
       FormsModule,
       AppRoutingModule,
       HttpModule,
-      InMemoryWebApiModule.forRoot(InMemoryProductService, InMemoryClientService)
   ],
   declarations: [
       AppComponent,

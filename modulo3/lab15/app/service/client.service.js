@@ -15,25 +15,25 @@ var Rx_1 = require('rxjs/Rx');
 var ClientService = (function () {
     function ClientService(http) {
         this.http = http;
-        this.clientsURI = 'http://localhost:3000/api/clients';
+        this.clientsURI = 'http://138.68.0.83:7070';
         this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
     }
     ClientService.prototype.getClients = function () {
-        return this.http.get(this.clientsURI)
-            .map(function (response) { return response.json().data; })
+        return this.http.get(this.clientsURI + "/api/v1/user/list")
+            .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };
     ClientService.prototype.update = function (client) {
-        var url = this.clientsURI + "/" + client.id;
+        var url = this.clientsURI + "/api/v1/user/update/" + client.id;
         return this.http
             .put(url, JSON.stringify(client), { headers: this.headers })
             .map(function () { return client; })
             .catch(this.handleError);
     };
-    ClientService.prototype.create = function (name) {
+    ClientService.prototype.create = function (firstname) {
         return this.http
-            .post(this.clientsURI, JSON.stringify({ name: name }), { headers: this.headers })
-            .map(function (res) { return res.json().data; })
+            .post(this.clientsURI + "/api/v1/user/sign-up", JSON.stringify({ firstname: firstname }), { headers: this.headers })
+            .map(function (res) { return res.json(); })
             .catch(this.handleError);
     };
     ClientService.prototype.handleError = function (error) {

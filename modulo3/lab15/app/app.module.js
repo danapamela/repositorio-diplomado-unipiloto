@@ -18,9 +18,6 @@ var product_list_component_1 = require('./component/product-list.component');
 var client_detail_component_1 = require('./component/client-detail.component');
 var client_list_component_1 = require('./component/client-list.component');
 var http_1 = require("@angular/http");
-var angular2_in_memory_web_api_1 = require("angular2-in-memory-web-api");
-var in_memory_product_service_1 = require("./mock/in-memory-product.service");
-var in_memory_client_service_1 = require("./mock/in-memory-client.service");
 var product_service_1 = require("./service/product.service");
 var client_service_1 = require("./service/client.service");
 var common_1 = require("@angular/common");
@@ -34,7 +31,6 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 app_routing_module_1.AppRoutingModule,
                 http_1.HttpModule,
-                angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_product_service_1.InMemoryProductService, in_memory_client_service_1.InMemoryClientService)
             ],
             declarations: [
                 app_component_1.AppComponent,

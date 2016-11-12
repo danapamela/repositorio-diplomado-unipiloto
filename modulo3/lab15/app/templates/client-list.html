@@ -1,8 +1,8 @@
 <h1>{{ title }}</h1>
 
 <div>
-    <label>Client name:</label> <input #clientName />
-    <button (click)="add(clientName.value); clientName.value=''">
+    <label>Client firstname:</label> <input #clientFirstname />
+    <button (click)="add(clientFirstname.value); clientFirstname.value=''">
         Add
     </button>
 </div>
@@ -13,7 +13,7 @@
     <li *ngFor="let client of clients"
         [class.pepito]="client === selected"
         (click)="onSelect(client)">
-        <span>{{client.id}}</span> {{client.name}}
+        <span>{{client.id}}</span> {{client.firstname}}
     </li>
 </ul>
 

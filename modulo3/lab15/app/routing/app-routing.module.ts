@@ -6,7 +6,7 @@ import {ClientListComponent} from "../component/client-list.component";
 import {ClientDetailComponent} from "../component/client-detail.component";
 
 const routes: Routes = [
-    { path: '', redirectTo: '/app', pathMatch: 'full' },
+    { path: '', redirectTo: '/client-list', pathMatch: 'full' },
     { path: 'client-list',  component:  ClientListComponent},
     { path: 'client/detail/:id', component:ClientDetailComponent },
     { path: 'product-list', component: ProductListComponent },

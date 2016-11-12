@@ -32,13 +32,13 @@ var ClientListComponent = (function () {
     ClientListComponent.prototype.onSelect = function (client) {
         this.selected = client;
     };
-    ClientListComponent.prototype.add = function (name) {
+    ClientListComponent.prototype.add = function (firstname) {
         var _this = this;
-        name = name.trim();
-        if (!name) {
+        firstname = firstname.trim();
+        if (!firstname) {
             return;
         }
-        this.clientService.create(name)
+        this.clientService.create(firstname)
             .subscribe(function (client) {
             _this.clients.push(client);
             _this.selected = null;

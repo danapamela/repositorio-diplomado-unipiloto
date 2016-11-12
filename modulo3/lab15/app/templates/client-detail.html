@@ -3,15 +3,23 @@
     <li *ngFor="let client of clients"
         [class.pepito]="client === selected"
         (click)="onSelect(client)">
-        <span>{{client.id}}</span> {{client.name}}
+        <span>{{client.id}}</span> {{client.firstname}}
     </li>
 </ul>
 
 <div *ngIf="client">
     <hr />
-    <label>Name: </label><br />
-    <input [(ngModel)]="client.name" placeholder="nombre"><br />
-    <label>Age: </label><br />
-    <input [(ngModel)]="client.age" placeholder="edad"><br />
+     <label>Email: </label><br />
+    <input [(ngModel)]="client.email" placeholder="email"><br /> 
+    <label>Password: </label><br />
+    <input [(ngModel)]="client.password" placeholder="password"><br />
+    <label>Firstname: </label><br />
+    <input [(ngModel)]="client.firstname" placeholder="Firstname"><br />
+    <label>Lastname: </label><br />
+    <input [(ngModel)]="client.lastname" placeholder="Lastname"><br />
+    <label>Phone: </label><br />
+    <input [(ngModel)]="client.phone" placeholder="phone"><br />
+    <label>Url: </label><br />
+    <input [(ngModel)]="client.url" placeholder="url"><br />
     <button (click)="save()">Save</button>
 </div>

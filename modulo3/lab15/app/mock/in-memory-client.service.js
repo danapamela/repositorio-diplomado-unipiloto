@@ -6,17 +6,17 @@ var InMemoryClientService = (function () {
         var clients = [
             {
                 id: 1,
-                name: "Jeffrey Rolando Gomez Pulido",
+                firstname: "Jeffrey Rolando Gomez Pulido",
                 age: 36
             },
             {
                 id: 2,
-                name: "Gina Paola Duarte Samaca",
+                firstname: "Gina Paola Duarte Samaca",
                 age: 20
             },
             {
                 id: 3,
-                name: "Nicolas Valencia Asttudillo",
+                firstname: "Nicolas Valencia Asttudillo",
                 age: 27
             }
         ];

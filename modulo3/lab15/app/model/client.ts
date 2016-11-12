@@ -1,5 +1,7 @@
 export class Client {
     id: number;
-    name: string;
-    age: number;
+    email: string;
+    firstname: string;
+    lastname: string;
+    phone: number;
 }

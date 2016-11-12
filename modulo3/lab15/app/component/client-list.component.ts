@@ -42,10 +42,10 @@ export class ClientListComponent {
         this.selected = client;
     }
 
-    add(name: string): void {
-        name = name.trim();
-        if (!name) { return; }
-        this.clientService.create(name)
+    add(firstname: string): void {
+        firstname = firstname.trim();
+        if (!firstname) { return; }
+        this.clientService.create(firstname)
             .subscribe(client => {
                 this.clients.push(client);
                 this.selected = null;

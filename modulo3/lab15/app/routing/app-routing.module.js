@@ -15,7 +15,7 @@ var product_detail_component_1 = require("../component/product-detail.component"
 var client_list_component_1 = require("../component/client-list.component");
 var client_detail_component_1 = require("../component/client-detail.component");
 var routes = [
-    { path: '', redirectTo: '/app', pathMatch: 'full' },
+    { path: '', redirectTo: '/client-list', pathMatch: 'full' },
     { path: 'client-list', component: client_list_component_1.ClientListComponent },
     { path: 'client/detail/:id', component: client_detail_component_1.ClientDetailComponent },
     { path: 'product-list', component: product_list_component_1.ProductListComponent },
