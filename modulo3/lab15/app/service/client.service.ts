@@ -29,7 +29,7 @@ export class ClientService {
     create(firstname: string): Observable<Client> {
 
         return this.http
-            .post(`${this.clientsURI}/api/v1/user/sign-up`, JSON.stringify({firstname: firstname}), {headers: this.headers})
+            .post(`${this.clientsURI}/api/v1/user/sign-up`, JSON.stringify({client}), {headers: this.headers})
             .map(res => res.json())
             .catch(this.handleError);
     }
